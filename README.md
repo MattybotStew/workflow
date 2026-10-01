@@ -14,6 +14,45 @@ leave at any step. Model-independent. Mac, VS Code, no local model required.
 Someone who knows Figma deeply and nothing else technical. If a step needs the
 terminal, the guide should hide it or spell it out.
 
+## Getting started
+
+This is just a folder of Markdown. Nothing in the process depends on Git or on
+any particular host — Git is only how the folder is shared. It works on GitHub,
+GitLab, a company internal remote, a shared drive, or a plain local folder with
+no remote at all.
+
+Pull it down to the chosen home:
+
+```bash
+git clone <your-remote-url> ~/workflow
+```
+
+The current public home is GitHub, if that is the one you are using:
+
+```bash
+git clone git@github.com:MattybotStew/workflow.git ~/workflow
+```
+
+That uses SSH, so your account needs a registered key; for HTTPS, use
+`https://github.com/MattybotStew/workflow.git`. To move to a different host
+later, point the remote at it:
+
+```bash
+git remote set-url origin <new-remote-url>
+```
+
+No remote? Skip the clone. Copy the folder to `~/workflow/`, and run `git init`
+inside it only if you want version history.
+
+Create the workspace once, alongside the repo:
+
+```bash
+mkdir -p ~/studio/_shared ~/studio/projects
+```
+
+Then copy `templates/agent.md` into each new project folder under
+`~/studio/projects/`.
+
 ## Roles
 
 | Role | Owns | Produces |
