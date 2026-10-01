@@ -26,6 +26,10 @@ Rules:
 4. Point to real files and paths, not descriptions of files.
 5. If the assets contradict each other, note the contradiction instead of
    picking a side.
+6. Set **Status** to the furthest phase the documents actually support. If the
+   assets already contain kickoff notes or decisions, the status is `Kickoff`,
+   not `Setup`. Do not default to `Setup`. The status must never contradict the
+   Decisions log or the Structure section.
 
 When you are done, list every question you could not answer from the documents.
 Ask only those, in one short list. Then stop.
